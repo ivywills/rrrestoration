@@ -46,25 +46,34 @@ export default function About() {
           </div>
         </div>
         <div className="w-full md:w-1/3 flex flex-col items-center min-h-[60vh]">
-          <div className="card bg-base-200 border-2 border-accent-content shadow-sm transition-transform duration-200 hover:scale-105 hover:shadow-lg mb-4 w-11/12 h-full">
+          <div className="card bg-base-200 border-2 border-accent-content shadow-sm transition-transform duration-200 hover:scale-105 hover:shadow-lg mb-4 w-11/12 h-full pb-2">
             <h1 className="text-l font-bold text-center m-4">Ryan Patterson</h1>
             <a
-              href="tel:15199651547"
-              className="text-md font-semibold text-left mx-4 block md:text-accent-content text-primary"
-            >
-              Phone: <span className="text-secondary">(519) 965-1547</span>
-            </a>
-          </div>
-          <div className="card bg-base-200 border-2 border-accent-content shadow-sm transition-transform duration-200 hover:scale-105 hover:shadow-lg mb-4 w-11/12 h-full">
-            <h1 className="text-l font-bold text-center m-4">Ryan Sterling</h1>
-            <a
               href="tel:15195665065"
-              className="text-md font-semibold text-left mx-4 block md:text-accent-content text-primary"
+              className="text-md font-semibold text-left mx-4 block"
             >
               Phone: <span className="text-secondary">(519) 566-5065</span>
             </a>
           </div>
-          <button className="btn btn-primary  border-2 border-accent-content shadow-sm transition-transform duration-200 hover:scale-105 hover:shadow-lg  text-white w-11/12 self-center mt-2 mb-4">
+          <div className="card bg-base-200 border-2 border-accent-content shadow-sm transition-transform duration-200 hover:scale-105 hover:shadow-lg mb-4 w-11/12 h-full pb-2">
+            <h1 className="text-l font-bold text-center m-4">Ryan Sterling</h1>
+            <a
+              href="tel:15199651547"
+              className="text-md font-semibold text-left mx-4 block"
+            >
+              Phone: <span className="text-secondary">(519) 965-1547</span>
+            </a>
+          </div>
+          <div className="card bg-base-200 border-2 border-accent-content shadow-sm transition-transform duration-200 hover:scale-105 hover:shadow-lg mb-4 w-11/12 py-2">
+            <a
+              href="mailto:RR.Restorations!@gmail.com"
+              className="text-md font-semibold mx-4 text-left block"
+            >
+              Email:{' '}
+              <span className="text-secondary">RR.Restorations1@gmail.com</span>
+            </a>
+          </div>
+          <button className="btn btn-primary  border-2 border-accent-content shadow-sm transition-transform duration-200 hover:scale-105 hover:shadow-lg text-white w-11/12 self-center mb-4">
             Fill out a Request Form to get started!
           </button>
         </div>
