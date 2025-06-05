@@ -20,7 +20,7 @@ export default function About() {
       <div className="flex flex-col items-center justify-center my-4 max-h-[33vh] max-w-screen">
         <img src={Seal} className="max-h-[25vh] w-auto object-contain" />
       </div>
-      <div className="text-center text-lg font-semibold text-secondary m-2 min-h-[2rem]">
+      <div className="text-center text-lg font-semibold text-secondary m-2 md:min-h-[2rem] min-h-[4rem]">
         {message.slice(0, visibleLetters)}
       </div>
       <div className="card border-2 border-accent-content bg-neutral-content w-11/12 max-w-xl mx-auto shadow-sm transition-transform duration-200 hover:scale-105 hover:shadow-lg my-2">
