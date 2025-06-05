@@ -15,43 +15,44 @@ export default function About() {
   }, [visibleLetters, message.length]);
 
   return (
-    <div className="w-full max-w-6xl mx-auto mb-8 flex flex-col md:flex-row gap-6">
-      {/* Left column: main content */}
-      <div className="w-full md:w-2/3">
-        <h1 className="text-2xl font-bold text-center m-4">About Us</h1>
-        <div className="flex flex-col items-center justify-center my-4 max-h-[33vh] max-w-screen">
-          <img src={Seal} className="max-h-[25vh] w-auto object-contain" />
+    <>
+      <h1 className="text-2xl font-bold text-center m-4">About Us</h1>
+      <div className="w-full max-w-5xl mx-auto mb-8 flex flex-col md:flex-row">
+        {/* Left column: main content */}
+        <div className="w-full md:w-2/3">
+          <div className="flex flex-col items-center justify-center my-4 max-h-[33vh] max-w-screen">
+            <img src={Seal} className="max-h-[25vh] w-auto object-contain" />
+          </div>
+          <div className="text-center text-lg font-semibold text-secondary m-2 md:min-h-[2rem] min-h-[4rem]">
+            {message.slice(0, visibleLetters)}
+          </div>
+          <div className="card border-2 border-accent-content bg-neutral-content w-11/12 max-w-xl mx-auto shadow-sm transition-transform duration-200 hover:scale-105 hover:shadow-lg my-2">
+            <div className="text-md font-semibold mt-4 mb-1 mx-8">
+              Together, for the past 10 years, we have had the opportunity to
+              serve numerous clients in Windsor-Essex County. The majority of
+              our work is focused on restoring your home or business to its
+              original condition.
+            </div>
+            <div className="text-md font-semibold m-1 mx-8">
+              Your property is one of the biggest investments you'll make in
+              your life, and far too often, we see these investments depreciate
+              in value. At RR, we take pride in helping our clients restore and
+              protect their investments.
+            </div>
+            <div className="text-md font-semibold mt-1 mb-4 mx-8">
+              If you're interested in what we can do for your property, please
+              contact us for a free estimate.
+            </div>
+          </div>
         </div>
-        <div className="text-center text-lg font-semibold text-secondary m-2 md:min-h-[2rem] min-h-[4rem]">
-          {message.slice(0, visibleLetters)}
-        </div>
-        <div className="card border-2 border-accent-content bg-neutral-content w-11/12 max-w-xl mx-auto shadow-sm transition-transform duration-200 hover:scale-105 hover:shadow-lg my-2">
-          <div className="text-md font-semibold mt-4 mb-1 mx-8">
-            Together, for the past 10 years, we have had the opportunity to
-            serve numerous clients in Windsor-Essex County. The majority of our
-            work is focused on restoring your home or business to its original
-            condition.
-          </div>
-          <div className="text-md font-semibold m-1 mx-8">
-            Your property is one of the biggest investments you'll make in your
-            life, and far too often, we see these investments depreciate in
-            value. At RR, we take pride in helping our clients restore and
-            protect their investments.
-          </div>
-          <div className="text-md font-semibold mt-1 mb-4 mx-8">
-            If you're interested in what we can do for your property, please
-            contact us for a free estimate.
-          </div>
+        <div className="w-full md:w-1/3 flex flex-col items-center min-h-[60vh]">
+          <div className="card bg-base-200 border-2 border-accent-content shadow-sm mb-4 w-11/12 h-full"></div>
+          <div className="card bg-base-200 border-2 border-accent-content shadow-sm mb-4 w-11/12 h-full"></div>
+          <button className="btn btn-primary self-center mt-2 mb-4">
+            Fill out a request form to get started
+          </button>
         </div>
       </div>
-      {/* Right column: two empty cards and button */}
-      <div className="w-full md:w-1/3 flex flex-col relative min-h-[60vh]">
-        <div className="card bg-base-200 border border-base-300 shadow-sm mb-4 h-40"></div>
-        <div className="card bg-base-200 border border-base-300 shadow-sm mb-4 h-40"></div>
-        <button className="btn btn-primary absolute left-0 bottom-0 m-4">
-          Fill out a request form to get started
-        </button>
-      </div>
-    </div>
+    </>
   );
 }
