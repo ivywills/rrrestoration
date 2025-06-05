@@ -47,7 +47,7 @@ export default function About() {
         </div>
         <div className="w-full md:w-1/3 flex flex-col items-center min-h-[60vh]">
           <div className="card bg-base-200 border-2 border-accent-content shadow-sm transition-transform duration-200 hover:scale-105 hover:shadow-lg mb-4 w-11/12 h-full pb-2">
-            <h1 className="text-l font-bold text-center m-4">Ryan Patterson</h1>
+            <h1 className="text-l font-bold text-center m-4">Ryan P</h1>
             <a
               href="tel:15195665065"
               className="text-md font-semibold text-left mx-4 block"
@@ -56,7 +56,7 @@ export default function About() {
             </a>
           </div>
           <div className="card bg-base-200 border-2 border-accent-content shadow-sm transition-transform duration-200 hover:scale-105 hover:shadow-lg mb-4 w-11/12 h-full pb-2">
-            <h1 className="text-l font-bold text-center m-4">Ryan Sterling</h1>
+            <h1 className="text-l font-bold text-center m-4">Ryan S</h1>
             <a
               href="tel:15199651547"
               className="text-md font-semibold text-left mx-4 block"
