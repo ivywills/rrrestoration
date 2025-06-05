@@ -17,7 +17,7 @@ export default function About() {
   return (
     <>
       <h1 className="text-2xl font-bold text-center m-4">About Us</h1>
-      <div className="w-full max-w-5xl mx-auto mb-8 flex flex-col md:flex-row">
+      <div className="w-full max-w-5xl mx-auto mb-1 flex flex-col md:flex-row">
         {/* Left column: main content */}
         <div className="w-full md:w-2/3">
           <div className="flex flex-col items-center justify-center my-4 max-h-[33vh] max-w-screen">
@@ -26,7 +26,7 @@ export default function About() {
           <div className="text-center text-lg font-semibold text-secondary m-2 md:min-h-[2rem] min-h-[4rem]">
             {message.slice(0, visibleLetters)}
           </div>
-          <div className="card border-2 border-accent-content bg-neutral-content w-11/12 max-w-xl mx-auto shadow-sm transition-transform duration-200 hover:scale-105 hover:shadow-lg my-2">
+          <div className="card border border-accent-content bg-neutral-content w-11/12 max-w-xl mx-auto shadow-sm transition-transform duration-200 hover:scale-105 hover:shadow-lg my-2">
             <div className="text-md font-semibold mt-4 mb-1 mx-8">
               Together, for the past 10 years, we have had the opportunity to
               serve numerous clients in Windsor-Essex County. The majority of
@@ -45,8 +45,8 @@ export default function About() {
             </div>
           </div>
         </div>
-        <div className="w-full md:w-1/3 flex flex-col items-center min-h-[60vh]">
-          <div className="card bg-base-200 border-2 border-accent-content shadow-sm transition-transform duration-200 hover:scale-105 hover:shadow-lg mb-4 w-11/12 h-full pb-2">
+        <div className="w-full md:w-1/3 mt-2 md:mt-0 flex flex-col items-center min-h-[60vh]">
+          <div className="card bg-base-200 border border-accent-content shadow-sm transition-transform duration-200 hover:scale-105 hover:shadow-lg mb-4 w-11/12 h-full pb-2">
             <h1 className="text-l font-bold text-center m-4">Ryan P</h1>
             <a
               href="tel:15195665065"
@@ -55,7 +55,7 @@ export default function About() {
               Phone: <span className="text-secondary">(519) 566-5065</span>
             </a>
           </div>
-          <div className="card bg-base-200 border-2 border-accent-content shadow-sm transition-transform duration-200 hover:scale-105 hover:shadow-lg mb-4 w-11/12 h-full pb-2">
+          <div className="card bg-base-200 border border-accent-content shadow-sm transition-transform duration-200 hover:scale-105 hover:shadow-lg mb-4 w-11/12 h-full pb-2">
             <h1 className="text-l font-bold text-center m-4">Ryan S</h1>
             <a
               href="tel:15199651547"
@@ -64,7 +64,7 @@ export default function About() {
               Phone: <span className="text-secondary">(519) 965-1547</span>
             </a>
           </div>
-          <div className="card bg-base-200 border-2 border-accent-content shadow-sm transition-transform duration-200 hover:scale-105 hover:shadow-lg mb-4 w-11/12 py-2">
+          <div className="card bg-base-200 border border-accent-content shadow-sm transition-transform duration-200 hover:scale-105 hover:shadow-lg mb-4 w-11/12 py-2">
             <a
               href="mailto:RR.Restorations!@gmail.com"
               className="text-md font-semibold mx-4 text-left block"
@@ -73,7 +73,7 @@ export default function About() {
               <span className="text-secondary">RR.Restorations1@gmail.com</span>
             </a>
           </div>
-          <button className="btn btn-primary  border-2 border-accent-content shadow-sm transition-transform duration-200 hover:scale-105 hover:shadow-lg text-white w-11/12 self-center mb-4">
+          <button className="btn btn-primary border border-accent-content shadow-sm transition-transform duration-200 hover:scale-105 hover:shadow-lg text-white w-11/12 self-center mb-4">
             Fill out a Request Form to get started!
           </button>
         </div>

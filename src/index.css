@@ -3,6 +3,17 @@
   themes: light --default, dark --prefersdark, autumn;
 }
 
+@plugin "daisyui/theme" {
+  name: 'autumn';
+  --radius-box: 0;
+  --radius-btn: 0;
+  --radius-badge: 0;
+  --radius-input: 0;
+  --radius-tab: 0;
+  --radius-selector: 0;
+  --radius-field: 0;
+}
+
 html,
 body,
 #root {
